@@ -3,60 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My LLN</title>
+    <link rel="stylesheet" href="./css/styleidentif.css">
+    <!--normalization helps to make the content standard for all servers-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--link to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--link to font google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--link to fontawesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+
 </head>
 <body>
     <header>
-        <img src="nice-logo.png" height="50" width="100" alt="nicelogo" title="logo is nice">
-        <nav>
-    <li><a href="page_principal.html">Accueil</a></li>
-    </nav>
-        <form action="/search">
-            <input type="search" name="query" placeholder="Champs de recherche">
-        </form>
+        <div class="container">
+                <nav>
+                    <div class="logo"><i class="fa-solid fa-car-rear"></i><span>My LLN</span></div>
+                    
+                    <form action="/search"></form>
+                    <div class="search">
+                        <span class="search-icon material-symbols-outlined">search</span>
+                        <input class= "search-input" type="search" name="query" placeholder="Search">
+                    </div>
+                        
+                    </form>
+                </nav>
+                    
+        </div>
     </header>
-    <hr>
-    <h2>COMPTE EXISTANT</h2>
-    <label>Nom de l'utilisateur</label>
-    <input type="text" id="lname" placeholder="Ivan_Ivanov" required> 
-    <br>
-    <label>Mot de passe</label>
-    <input type="password" id="pass" maxlength="12" required>
-    <br>
-    <br>
-    <a href="new_incident.html">
-        <button>s'indentifier</button>
-    </a>
+    <!--start landing section-->
+    <div class="landing">
+        <div class="container">
+            
+            <h2 class="titre">COMPTE EXISTANT</h2>
+            <label class="input">Nom de l'utilisateur :</label>
+            <div class="bord"><input class="input-bare" type="text" id="lname" placeholder="Nom" required> </div>
+            
+            <label class="input">Mot de passe :</label>
+            <div class="bord"><input class="input-bare" type="password" id="pass" maxlength="12" required placeholder="***********"></div>
+            
+            <div class="btn">
+                <a href="new_incident.html">
+                    s'indentifier
+                </a>
+            </div>
+            
+            <h2 class="titre">NOUVEAU COMPTE</h2>
 
-    <hr>
-    <h2>NOUVEAU COMPTE</h2>
+            <label class="input">Nom de l'utilisateur :</label>
+            <div class="bord"><input class="input-bare" type="text" id="lname" placeholder="nom" required> </div>
+            
+            <label class="input">Mot de passe :</label>
+            <div class="bord"><input class="input-bare" type="password" id="pass" maxlength="12" required placeholder="*************"></div>
+        
+            <label class="input">Nom complet :</label>
+            <div class="bord"><input class="input-bare" type="text" id="lname" placeholder="Ivan Ivanov" required aria-placeholder="full name"> </div>
+            
+            <label class="input">Adresse e-mail :</label>
+            <div class="bord"><input class="input-bare" type="email" id="email" placeholder="nom.prenom@gmail.com" required ></div>
+            
+            
+            
 
-    <label>Nom de l'utilisateur</label>
-    <input type="text" id="lname" placeholder="Ivan_Ivanov" required> 
-    <br>
-    <label>Mot de passe</label>
-    <input type="password" id="pass" maxlength="12" required>
-    <br>
-    <label>Nom complet</label>
-    <input type="text" id="lname" placeholder="Ivan Ivanov" required> 
-    <br>
-    <label>Adresse e-mail</label>
-    <input type="email" id="email" placeholder="ivanTHEbest@gmail.com" required>
+            <div class="btn">
+                <a href="new_incident.html">s'enregistrer</a>
+            </div>
+        </div>
+        
     </div>
-    <br>
-    <br>
-
-    <div>
-        <input type = "submit">
-    </div>
-
-    <div>
-        <input type = "reset">
-    </div>
-
-    <a href="new_incident.html">
-        <button>s'enregistrer</button>
-    </a>
+        
     
 </body>
 </html>
